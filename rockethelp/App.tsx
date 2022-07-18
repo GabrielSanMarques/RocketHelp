@@ -1,9 +1,12 @@
 import { NativeBaseProvider } from 'native-base';
-import { SignIn } from './src/screens/Signin';
+
+import { THEME } from './src/styles/theme';
+
+import { SignIn } from './src/screens/SignIn';
 
 export default function App() {
   return (
-    <NativeBaseProvider>
+    <NativeBaseProvider theme={THEME}>
       <SignIn />
     </NativeBaseProvider> 
   );
